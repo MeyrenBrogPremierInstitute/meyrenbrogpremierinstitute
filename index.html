@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meyren & Brog Premier Institute | Centre for Scholastic Excellence</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8f9fc;
+color:#222;
+line-height:1.7;
+}
+
+:root{
+--primary:#7a0019;
+--secondary:#0f172a;
+--gold:#d4af37;
+--white:#ffffff;
+--light:#f5f7fa;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(15,23,42,.95);
+backdrop-filter:blur(8px);
+z-index:999;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+color:white;
+font-size:1.2rem;
+font-weight:700;
+}
+
+.logo span{
+color:var(--gold);
+}
+
+.nav-links{
+display:flex;
+gap:25px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:var(--gold);
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(15,23,42,.75),rgba(15,23,42,.75)),
+url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1500&q=80');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:0 20px;
+}
+
+.hero-content{
+max-width:900px;
+color:white;
+}
+
+.hero-content h1{
+font-size:4rem;
+font-weight:800;
+margin-bottom:15px;
+}
+
+.hero-content h2{
+color:var(--gold);
+font-size:1.3rem;
+margin-bottom:25px;
+font-weight:500;
+}
+
+.hero-content p{
+font-size:1.1rem;
+margin-bottom:35px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:var(--gold);
+color:black;
+font-weight:700;
+text-decoration:none;
+border-radius:50px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+/* SECTION */
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.section-title h2{
+font-size:2.4rem;
+color:var(--secondary);
+}
+
+.section-title p{
+color:#666;
+}
+
+/* ABOUT */
+
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.about-card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+/* PROGRAMS */
+
+.programs{
+background:white;
+}
+
+.program-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.program-card{
+padding:30px;
+border-radius:15px;
+background:var(--light);
+transition:.3s;
+}
+
+.program-card:hover{
+transform:translateY(-8px);
+}
+
+.program-card h3{
+color:var(--primary);
+margin-bottom:10px;
+}
+
+/* FEATURES */
+
+.feature-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.feature{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+/* RESULTS */
+
+.results{
+background:var(--secondary);
+color:white;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+text-align:center;
+}
+
+.stat h3{
+font-size:3rem;
+color:var(--gold);
+}
+
+/* CTA */
+
+.cta{
+text-align:center;
+background:linear-gradient(135deg,var(--primary),#520010);
+color:white;
+border-radius:25px;
+margin:80px 8%;
+padding:70px 20px;
+}
+
+.cta h2{
+font-size:2.5rem;
+margin-bottom:15px;
+}
+
+.cta p{
+margin-bottom:30px;
+}
+
+/* FOOTER */
+
+footer{
+background:#0a0f1d;
+color:white;
+padding:50px 8%;
+text-align:center;
+}
+
+footer p{
+opacity:.8;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.hero-content h1{
+font-size:2.5rem;
+}
+
+.about-grid{
+grid-template-columns:1fr;
+}
+
+.nav-links{
+display:none;
+}
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">
+MEYREN & BROG <span>PREMIER INSTITUTE</span>
+</div>
+
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#programs">Programs</a>
+<a href="#features">Features</a>
+<a href="#results">Results</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>MEYREN & BROG PREMIER INSTITUTE</h1>
+
+<h2>Centre for Scholastic Excellence</h2>
+
+<p>
+Empowering Students to Achieve Academic Excellence, Secure Outstanding Board Results,
+and Build a Bright Future Through Quality Education and Mentorship.
+</p>
+
+<a href="#contact" class="btn">
+Admissions Open
+</a>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="section-title">
+<h2>About Us</h2>
+<p>Dedicated to Academic Excellence and Student Success</p>
+</div>
+
+<div class="about-grid">
+
+<div class="about-card">
+<h3>Our Vision</h3>
+<br>
+<p>
+To become a leading educational institution recognized for academic excellence,
+innovation, character development, and student achievement.
+</p>
+</div>
+
+<div class="about-card">
+<h3>Our Mission</h3>
+<br>
+<p>
+To provide quality education, effective guidance, and a supportive learning
+environment that enables students to excel in board examinations and beyond.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PROGRAMS -->
+
+<section id="programs" class="programs">
+
+<div class="section-title">
+<h2>Academic Programs</h2>
+<p>Preparing Students for Success</p>
+</div>
+
+<div class="program-grid">
+
+<div class="program-card">
+<h3>Matric Science</h3>
+<p>Comprehensive preparation for Board Examinations.</p>
+</div>
+
+<div class="program-card">
+<h3>Matric Arts</h3>
+<p>Focused learning and conceptual understanding.</p>
+</div>
+
+<div class="program-card">
+<h3>FSc Pre-Medical</h3>
+<p>Strong foundation for future medical professionals.</p>
+</div>
+
+<div class="program-card">
+<h3>FSc Pre-Engineering</h3>
+<p>Academic excellence for engineering aspirants.</p>
+</div>
+
+<div class="program-card">
+<h3>Test Preparation</h3>
+<p>Preparation for entry tests and competitive examinations.</p>
+</div>
+
+<div class="program-card">
+<h3>Career Guidance</h3>
+<p>Guidance for scholarships, admissions, and opportunities.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section id="features">
+
+<div class="section-title">
+<h2>Why Choose Us?</h2>
+<p>Excellence Beyond the Classroom</p>
+</div>
+
+<div class="feature-grid">
+
+<div class="feature">
+<h3>Experienced Faculty</h3>
+<p>Qualified teachers dedicated to student achievement.</p>
+</div>
+
+<div class="feature">
+<h3>Result-Oriented Learning</h3>
+<p>Focused preparation for top board examination results.</p>
+</div>
+
+<div class="feature">
+<h3>Personal Mentorship</h3>
+<p>Individual guidance and academic support.</p>
+</div>
+
+<div class="feature">
+<h3>Future Opportunities</h3>
+<p>Scholarships, competitions, and career pathways.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- RESULTS -->
+
+<section id="results" class="results">
+
+<div class="section-title">
+<h2 style="color:white;">Our Achievements</h2>
+<p style="color:#ddd;">Replace with Actual Numbers</p>
+</div>
+
+<div class="stats">
+
+<div class="stat">
+<h3>500+</h3>
+<p>Students</p>
+</div>
+
+<div class="stat">
+<h3>95%</h3>
+<p>Success Rate</p>
+</div>
+
+<div class="stat">
+<h3>50+</h3>
+<p>Top Achievers</p>
+</div>
+
+<div class="stat">
+<h3>10+</h3>
+<p>Expert Teachers</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<div class="cta">
+
+<h2>Admissions Open for 2026-27</h2>
+
+<p>
+Join Meyren & Brog Premier Institute and take the next step toward academic excellence.
+</p>
+
+<a href="#" class="btn">Apply Now</a>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer id="contact">
+
+<h2>MEYREN & BROG PREMIER INSTITUTE</h2>
+
+<p>Centre for Scholastic Excellence</p>
+
+<br>
+
+<p>
+📞 +92 XXX XXXXXXX
+<br>
+📧 admissions@meyrenbrogpremierinstitute.com
+<br>
+📍 Kasur, Punjab, Pakistan
+</p>
+
+<br>
+
+<p>
+© 2026 Meyren & Brog Premier Institute. All Rights Reserved.
+</p>
+
+</footer>
+
+</body>
+</html>
